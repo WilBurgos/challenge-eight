@@ -23,11 +23,17 @@ class CatastroSeeder extends Seeder
         $filename01 = str_replace("\\", "/", database_path() . '/data/spot2-01.sql');
         dump(\DB::unprepared(file_get_contents($filename01)));
 
+        $filename012 = str_replace("\\", "/", database_path() . '/data/spot2-01-2.sql');
+        dump(\DB::unprepared(file_get_contents($filename012)));
+
         $filename2 = str_replace("\\", "/", database_path() . '/data/spot2-2.sql');
         dump(\DB::unprepared(file_get_contents($filename2)));
 
         $filename3 = str_replace("\\", "/", database_path() . '/data/spot2-3.sql');
         dump(\DB::unprepared(file_get_contents($filename3)));
+
+        $filename32 = str_replace("\\", "/", database_path() . '/data/spot2-3-2.sql');
+        dump(\DB::unprepared(file_get_contents($filename32)));
 
         // Catastro::truncate();
 
